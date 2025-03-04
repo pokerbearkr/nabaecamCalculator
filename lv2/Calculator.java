@@ -20,12 +20,12 @@ public class Calculator {
             case "*": result = num1 * num2; break;
             case "/":
                 if (num2 == 0) {
-                    throw new ArithmeticException("❌ 0으로 나눌 수 없습니다.");
+                    throw new ArithmeticException("0으로 나눌 수 없습니다.");
                 }
                 result = num1 / num2;
                 break;
             default:
-                throw new IllegalArgumentException("❌ 올바른 연산자를 입력하세요 (+, -, *, /).");
+                throw new IllegalArgumentException("올바른 연산자를 입력하세요 (+, -, *, /).");
         }
 
         results.add(result); // 연산 결과 저장
